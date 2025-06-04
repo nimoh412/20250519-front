@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>切版規劃</title>
+        <style>
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            .profile {
+                max-width: 1000px;
+                margin: 0 auto;
+                position: relative;
+                padding: 20px;
+                background: rgba(255, 0, 0, 0.37);
+                border-radius: 10px;
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                gap: 20px;
+            }
+            .profile-left {
+                background: rgba(0, 255, 0, 0.37);
+                padding: 20px;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .profile-right {
+                background: rgba(0, 0, 255, 0.37);
+                padding: 20px;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .profile-left-item {
+                padding: 10px;
+                background: rgba(255, 187, 0, 0.37);
+                border-radius: 10px;
+            }
+            .profile-right-item {
+                padding: 10px;
+                background: rgba(255, 255, 0, 0.37);
+                border-radius: 10px;
+            }
+            .profile-right-item-button {
+                padding: 10px;
+                background: rgba(255, 255, 0, 0.37);
+                border-radius: 10px;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="profile">
+            <div class="profile-left">
+                <div class="profile-left-item">Me Information</div>
+                <div class="profile-left-item">Contact</div>
+            </div>
+            <div class="profile-right">
+                <div class="profile-right-item">About Me</div>
+                <div class="profile-right-item">Work Experience</div>
+                <div class="profile-right-item">Education</div>
+                <div class="profile-right-item">Skills</div>
+                <div class="profile-right-item">
+                    <button class="profile-right-item-button">
+                        Download CV
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

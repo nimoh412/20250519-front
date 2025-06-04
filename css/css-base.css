@@ -1,0 +1,8 @@
+/* 選取profile class */
+/* class -> . */
+/* id -> # */
+
+.profile {
+    color: rgb(74 70 119);
+    background: linear-gradient(140deg, #c79eea 0%, #4ba28d 100%);
+}
