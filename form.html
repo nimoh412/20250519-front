@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>html form</title>
+    </head>
+
+    <body>
+        <h2>get方法</h2>
+        <!--會將數據顯示在網址列上 安全性較差  -->
+        <form
+            action="https://book.niceinfos.com/api/form/index.php"
+            method="get"
+        >
+            <div>
+                <label for="account">Account</label>
+                <input type="text" name="account" id="account" />
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" />
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>post方法</h2>
+        <!-- 不會將數據顯示在網址列上 安全性較高 -->
+        <form
+            action="https://book.niceinfos.com/api/form/index.php"
+            method="post"
+        >
+            <div>
+                <label for="account">Account</label>
+                <input type="text" name="account" id="account" />
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" />
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- input是一個在表單中會應用的標籤，但在form外使用也可以但無法傳送,當作是跟使用者做互動 -->
+        <div>
+            <label for="demo">Demo</label>
+            <input type="text" name="demo" id="demo" />
+        </div>
+        <button type="submit">Submit DEMO</button>
+    </body>
+</html>
