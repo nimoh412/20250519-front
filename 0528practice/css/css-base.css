@@ -1,0 +1,26 @@
+/* 選取profile class */
+/* class -> . */
+/* id -> # */
+
+.profile {
+    color: rgb(74 70 119);
+    background: linear-gradient(140deg, #c79eea 0%, #4ba28d 100%);
+}
+
+/* 所有class為"highlight"的元素都會改變 */
+/* .highlight {
+    color: red;
+    background: yellow;
+} */
+
+/* 只要是p標籤都會被改變 */
+/* p {
+    color: antiquewhite;
+    background: green;
+} */
+
+/* 只想要p標籤且class為“highlight”的地方做改變 */
+p.highlight {
+    color: white;
+    background: #7363b4;
+}

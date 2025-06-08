@@ -1,0 +1,54 @@
+/* 後代選擇器，只要在demo、child裡的都會吃這個樣式 */
+.demo .child {
+    color: red;
+}
+
+/* 子階選擇器，只有第一層有吃到樣式，
+後面層級還是會吃到樣式是因為CSS繼承
+(但前提是沒有另外宣告後面層級的樣式，如果有另外宣告就不會繼承*/
+.demo > .child2 {
+    color: blue;
+}
+
+/* 類別選擇器 */
+.grandchild {
+    color: yellow;
+}
+
+/* 優先權(權重分數)：子階3 後代2 類別1 繼承0
+當優先分數相同時後者覆蓋前者*/
+
+.trigger {
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+/* 選中狀態 */
+.trigger:checked {
+    width: 40px;
+    height: 40px;
+}
+
+.content {
+    padding: 15px;
+    background-color: #3e3eff;
+    color: #fff;
+    display: none;
+}
+
+.trigger:checked + .content {
+    display: block;
+}
+
+.trigger-btn {
+    padding: 10px 20px;
+    background-color: #3e3eff;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    margin: 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
